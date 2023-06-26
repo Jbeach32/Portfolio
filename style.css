@@ -34,10 +34,21 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+.img {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Face.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.title {
+
+}
 
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -82,7 +93,7 @@ body {
 }
 
 .footer nav ul {
-
+    list-style: none;
 }
 
 @media screen and (max-width: 992px) {
