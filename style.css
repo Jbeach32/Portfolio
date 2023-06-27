@@ -5,107 +5,83 @@
 }
 
 body {
-    background-color: green;
+    background-color: darkseagreen;
 }
 
 .header {
-    padding: 40px;
+    padding: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: yellow;
-    color: #ffffff; 
+    background-color: bisque;
+    color: darkslategray;
+    
+
 }
 
 .header h1 {
-    display:inline-block;
-    flex-wrap: wrap;
-    font-size: 45px;
-    color: green;
+    display: inline-block;
+    font-size: 50px;
 }
 
 .header nav {
     padding-top: 15px;
-    margin-right: 20px;
     float: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
-}
-.img {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("./Face.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.title {
-
 }
 
-.content {
+.profile-pic {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 100vh;
-    margin: 0 auto;
-    border-style: solid;
-    border-width: 2px;   
+     
+}
+
+.profile-pic h2 {
+    font-size: 50px;
+    padding: 0.5%;
+}
+
+.about-me {
+    position: relative;
+    text-align: center;
+    color: darkslategray;
+}
+
+.paragraph {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    padding: 0.1%;
+    color: darkslategray;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+
 }
 
 .main-boxes {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: greenyellow;
-    color: black;
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.about me {
     display: flex;
-    justify-content: space-between;
-}
-.main-boxes h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2%;
+    color: darkslategray;
+    outline: 2px solid lightgoldenrodyellow;
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+    
 }
 
-.footer h2 {
-    font-size: 30px;
-}
-
-.footer nav ul {
-    list-style: none;
-}
-
-@media screen and (max-width: 992px) {
-    .header {
-        background: lightgreen;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .main-boxes {
-        background-color: burlywood;
+@media screen (max-width: 800px) {
+    .profile-pic {
         flex-direction: column;
     }
 }
