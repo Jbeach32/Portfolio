@@ -108,7 +108,7 @@ body {
     color: bisque;
     background-image: url(./Images/Family.jpg);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 .main-box a {
