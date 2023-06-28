@@ -14,13 +14,16 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(bisque, darkseagreen);
     color: darkslategray;
-    flex: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 50px;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .header nav {
@@ -29,8 +32,9 @@ body {
     font-size: 25px;
     display: flex;
     flex-flow: row;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .header nav ul {
@@ -40,7 +44,6 @@ body {
 .header nav ul li {
     display: flex;
     justify-content: center;
-    flex: wrap;
     margin-right: 10px;
 }
 
@@ -53,7 +56,7 @@ body {
     width: 50%;
     border-radius: 50%;
     display: flex;
-    flex: wrap;
+    margin-top: 20px;
 }
 
 .profile-pic {
@@ -61,7 +64,6 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .profile-pic h2 {
@@ -95,7 +97,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    height: 300px;
+    height: 290px;
     width: 30%; 
     margin: 1%;
     padding: 10px;
@@ -103,16 +105,15 @@ body {
     border-style: dashed;
     border-width: 1px;
     font-size: 25px;
-    color: darkslategray;
-}
-
-.main-box {
-    background-color: url;
+    color: bisque;
+    background-image: url(./Images/Family.jpg);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .main-box a {
     text-decoration: none;
-    color: darkslategray;
+    color: bisque;
     cursor: pointer;
 }
 
@@ -133,7 +134,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 2%;
-    color: darkslategray;
+    color: bisque;
     outline: 2px solid lightgoldenrodyellow;
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
@@ -144,7 +145,27 @@ body {
     color: aquamarine;
 }
 
+.imageOne a, .imageTwo a, .imageThree a {
+    color: bisque;
+}
 
+.imageOne {
+    background-image: url(./Images/Jackson.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat;
+}
+
+.imageTwo {
+    background-image: url(./Images/Jameson.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat;
+}
+
+.imageThree {
+    background-image: url(./Images/Dejah.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat;
+}
 
 .footer {
     padding: 60px;
@@ -173,8 +194,38 @@ body {
     color:aquamarine;
 }
 
-@media screen and (max-width: 200px) {
-    header .profile-pic {
+@media screen and (max-width: 375px) {
+    /* Styles for screens up to 768px wide */
+    .header {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 30px;
+    }
+    
+    .header nav {
+        font-size: 18px;
+    }
+    
+    .main-box {
+        width: 80%;
+    }
+    
+    .box {
         flex-direction: column;
+        gap: 20px;
+    }
+    
+    .imageOne, .imageTwo, .imageThree {
+        background-size: cover;
+    }
+    
+    .footer h2 {
+        font-size: 30px;
+    }
+    
+    .footer nav {
+        font-size: 16px;
     }
 }
