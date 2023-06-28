@@ -7,6 +7,11 @@
     <link rel="reset" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Portfolio</title>
+    <style type="text/css">
+        ul li {
+            list-style: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +35,7 @@
         </nav>
     </header>
     <div class="profile-pic">
-        <img src="Face.jpg">
+        <img src="Images/Face.jpg" class="pic">
         <h2 class="about-me">About Me</h2>
         <div id="about-me" class="paragraph">I am new to the Web Development world but excited and eager to learn. I truly enjoy a new challenge and am quick to learn new concepts and material. 
             My background in Quality Control lends itself in tying together the need for attention to detail and debugging code. 
@@ -38,30 +43,32 @@
             the privilege of raising three wonderful children, Jackson, Jameson, and Dejah. 
             I also enjoy volunteering at my church and telling others about Jesus.</div>
     </div>
-    <main class="box">
-        <article id="work" class="main-boxes">
+    <div>
+        <article id="work" class="main-box">
             <h2>HTML</h2>
-            <p>
+            <a href="https://jbeach32.github.io/HTML-GIT-CSS-01/">
                 HTML Deployed Page 
-            </p>
+            </a>
         </article>
-        <article id="work" class="main-boxes">
+    </div>
+    <main class="box">
+        <article id="work" class="imageOne">
             <h2>CSS</h2>
-            <p>
+            <a href="">
                 CSS Deployed Page 
-            </p>
+            </a>
         </article>
-        <article id="work" class="main-boxes">
+        <article id="work" class="imageTwo">
             <h2>Javascript</h2>
-            <p>
+            <a href="" >
                 Javacript Deployed Page
-            </p>
+            </a>
         </article>
-        <article id="Resume" class="main-boxes">
+        <article id="Resume" class="imageThree">
             <h2>Resume</h2>
-            <p>
+            <a href="https://linkedin.com/in/joshua-beach-5353481bb">
                 Josh Beach Resume
-            </p>
+            </a>
         </article>
     </main>
     <footer class="footer">
