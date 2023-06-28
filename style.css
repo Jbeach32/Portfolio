@@ -195,7 +195,6 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    /* Styles for screens up to 768px wide */
     .header {
         padding: 20px;
     }
